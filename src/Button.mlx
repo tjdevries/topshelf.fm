@@ -1,0 +1,12 @@
+let[@react.component] make ~onClick ~children =
+  <div onClick className={|
+      cursor-pointer py-2 px-5 bg-pink-500 rounded-full shadow-md text-white font-semibold
+      m-2
+      focus:outline-none hover:bg-violet-700
+      transform duration-150 ease-in-out active:translate-y-1
+      select-none
+  |}>
+    (children)
+  </div>
+
+let default = make;

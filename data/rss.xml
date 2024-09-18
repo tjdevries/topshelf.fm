@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+	<channel>
+		<title><![CDATA[The Top Shelf]]></title>
+		<description><![CDATA[ThePrimeagen and teej_dv are on a quest to find the best possible technical speakers and ask the best possible questions we can find. You all know ThePrimeagen can't read, so this is a great format for him to really shine. Teej is here to make sure that Prime knows who the guest is and also to interrupt Prime wherever possible]]></description>
+		<link>https://topshelf.fm</link>
+		<image>
+			<url>https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg</url>
+			<title>The Top Shelf</title>
+			<link>https://topshelf.fm</link>
+		</image>
+		<generator>Anchor Podcasts</generator>
+		<lastBuildDate>Tue, 17 Sep 2024 20:42:23 GMT</lastBuildDate>
+		<atom:link href="https://anchor.fm/s/fb29b160/podcast/rss" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[topshelf]]></author>
+		<copyright><![CDATA[topshelf]]></copyright>
+		<language><![CDATA[en]]></language>
+		<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+		<itunes:author>topshelf</itunes:author>
+		<itunes:summary>ThePrimeagen and teej_dv are on a quest to find the best possible technical speakers and ask the best possible questions we can find. You all know ThePrimeagen can&apos;t read, so this is a great format for him to really shine. Teej is here to make sure that Prime knows who the guest is and also to interrupt Prime wherever possible</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>topshelf</itunes:name>
+			<itunes:email>public@topshelf.fm</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="Technology"/>
+		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+		<item>
+			<title><![CDATA[Ginger Bill: Creator of Odin (a better C)]]></title>
+			<description><![CDATA[<p>Ginger Bill, Creator of the Odin Language. I (TJ) think it&#39;s a better C in a lot of ways. Very fun language to write. You should check it out!</p>
+<p><br></p>
+<p>X: <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWFBYXdMWllxZ3lLRG5ZbWFjZDYya0MtUE4tUXxBQ3Jtc0trRHQyV2xtNmQ3WFlxQ01ZNmU3R3ZpaGRYRmxZd0lVRU9SMTlPaUpUYXJOaWxOMDRTUTF4bkdfNURkUmg0dC1McUQ4QXJjUVZZQnl1RjdiZXNfNm9BbU1QLXJtN3NNeXFMRG9aY29YMVNzOWpnQ05URQ&q=https%3A%2F%2Fx.com%2FTheGingerBill&v=fYUruq352yE" target="_blank" rel="nofollow">https://x.com/TheGingerBill</a> </p>
+<p>YouTube: <a href="https://youtube.com/gingergames" target="_blank" rel="noopener noreferer">https://youtube.com/gingergames</a></p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Ginger-Bill-Creator-of-Odin-a-better-C-e2ogvh0</link>
+			<guid isPermaLink="false">d3cd09ab-7c65-47d0-a80c-f54c86dbffce</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Tue, 17 Sep 2024 19:30:53 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/91831264/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-8-17%2F386531163-44100-2-cbde78069377d.mp3" length="46650513" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Ginger Bill, Creator of the Odin Language. I (TJ) think it&amp;#39;s a better C in a lot of ways. Very fun language to write. You should check it out!&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;X: &lt;a href=&quot;https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbWFBYXdMWllxZ3lLRG5ZbWFjZDYya0MtUE4tUXxBQ3Jtc0trRHQyV2xtNmQ3WFlxQ01ZNmU3R3ZpaGRYRmxZd0lVRU9SMTlPaUpUYXJOaWxOMDRTUTF4bkdfNURkUmg0dC1McUQ4QXJjUVZZQnl1RjdiZXNfNm9BbU1QLXJtN3NNeXFMRG9aY29YMVNzOWpnQ05URQ&amp;q=https%3A%2F%2Fx.com%2FTheGingerBill&amp;v=fYUruq352yE&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://x.com/TheGingerBill&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;YouTube: &lt;a href=&quot;https://youtube.com/gingergames&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferer&quot;&gt;https://youtube.com/gingergames&lt;/a&gt;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>Yes</itunes:explicit>
+			<itunes:duration>00:48:35</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Chris Lattner: Creator of LLVM, Swift, and Mojo]]></title>
+			<description><![CDATA[<p>Guest: Chris Lattner </p>
+<p><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmFmWVotczdBT2x2dmRxeTBMX21jYzg1TzlGUXxBQ3Jtc0ttczBEQ3NFVXRTUXF5endYYkNyLW1WVUpFTzBKelNMQXZ4WkYtbGdYakpLNVdPbHR1ZnRDV0FjQWxVdEI2S05sQ3hwUHE1R0lPVzdxeFhGaXNUNWVxRTZRUWxydDg2aURGSUhhazl5WHNEbDFPdi1lTQ&q=https%3A%2F%2Fx.com%2Fclattner_llvm%3Fs%3D21%26t%3D-sv4MdpmLrRuMIhARbLk-g&v=ovYbgbrQ-v8" target="_blank" rel="nofollow">https://x.com/clattner_llvm</a></p>
+<p><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbjY5UGh4eDViOG16OE9PNzlLUFNWMnNUYmwyZ3xBQ3Jtc0ttd2lXR2t0QmFMMGp3bzBzQS1fSENYR201WjBxNnYtdUFhZm82STJZSTM4OU5xazlZRVpRcERYZjhRRkk0amRkX2g0a2VjMUp2TVNod1lmRkJhY0ZqUGhBUWxvSG9aSXpjLS1VaFdvZmJnaFZaMDRQYw&q=https%3A%2F%2Fwww.modular.com%2F&v=ovYbgbrQ-v8" target="_blank" rel="nofollow">https://www.modular.com</a></p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Chris-Lattner-Creator-of-LLVM--Swift--and-Mojo-e2og9jb</link>
+			<guid isPermaLink="false">e3ad4c63-4369-4755-8f5d-fdf3ba732004</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Tue, 17 Sep 2024 03:41:57 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/91808811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-8-17%2F386503447-44100-2-eada883eed4ff.mp3" length="63107238" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Chris Lattner &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbmFmWVotczdBT2x2dmRxeTBMX21jYzg1TzlGUXxBQ3Jtc0ttczBEQ3NFVXRTUXF5endYYkNyLW1WVUpFTzBKelNMQXZ4WkYtbGdYakpLNVdPbHR1ZnRDV0FjQWxVdEI2S05sQ3hwUHE1R0lPVzdxeFhGaXNUNWVxRTZRUWxydDg2aURGSUhhazl5WHNEbDFPdi1lTQ&amp;q=https%3A%2F%2Fx.com%2Fclattner_llvm%3Fs%3D21%26t%3D-sv4MdpmLrRuMIhARbLk-g&amp;v=ovYbgbrQ-v8&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://x.com/clattner_llvm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbjY5UGh4eDViOG16OE9PNzlLUFNWMnNUYmwyZ3xBQ3Jtc0ttd2lXR2t0QmFMMGp3bzBzQS1fSENYR201WjBxNnYtdUFhZm82STJZSTM4OU5xazlZRVpRcERYZjhRRkk0amRkX2g0a2VjMUp2TVNod1lmRkJhY0ZqUGhBUWxvSG9aSXpjLS1VaFdvZmJnaFZaMDRQYw&amp;q=https%3A%2F%2Fwww.modular.com%2F&amp;v=ovYbgbrQ-v8&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;https://www.modular.com&lt;/a&gt;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:05:44</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+	</channel>
+</rss>

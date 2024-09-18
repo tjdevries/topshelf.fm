@@ -1,0 +1,13 @@
+(version 2.5)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml dune)
+
+(source
+ (fetch
+  (url
+   https://github.com/ncannasse/xml-light/releases/download/2.5/xml-light-2.5.tbz)
+  (checksum
+   sha256=f58c2b3db70ad1ba080b0d306ae32f82ccbb95dabb92c599cdc467d1e44e003d)))

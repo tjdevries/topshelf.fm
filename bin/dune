@@ -1,0 +1,4 @@
+(executable
+  (name xmltest)
+  (libraries xml-light base fmt)
+  (preprocess (pps ppx_deriving.std)))
