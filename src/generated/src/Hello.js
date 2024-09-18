@@ -3,7 +3,7 @@
 
 console.log("Hello, World!");
 
-const $$default = 6;
+const $$default = 7;
 
 export {
   $$default as default,
