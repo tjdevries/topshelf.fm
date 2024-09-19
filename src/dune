@@ -1,8 +1,16 @@
-
 (melange.emit
  (target generated)
- (libraries reason-react melange.belt)
+ (libraries reason-react melange.belt feed)
  (promote (until-clean))
  (preprocess
   (pps melange.ppx reason-react-ppx))
  (module_systems es6))
+
+(rule
+  (mode promote)
+  (target episodes.ml)
+  (deps ../bin/generate_episodes.exe ../data/rss.xml)
+  (action
+   (with-stdout-to %{target}
+    (run %{deps}))))
+

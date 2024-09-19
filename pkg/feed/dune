@@ -1,0 +1,3 @@
+(library
+  (name feed)
+  (modes melange native))
