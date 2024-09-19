@@ -66,7 +66,7 @@ let[@react.component] make () =
           (string {|You know ThePrimeagen can't read, but now you can finally watch him listen. Don't worry, teej_dv is here to help with coherent questions.|})
         </div>
       </header>
-        <section className="container mx-auto my-16">
+        <section className="container mx-auto px-4 py-16">
           <h3 className="text-2xl font-bold mb-6">(string "Latest Episodes")</h3>
           <div className="space-y-4">
             (array episodes)

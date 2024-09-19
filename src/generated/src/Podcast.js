@@ -119,7 +119,7 @@ function Podcast(Props) {
                               className: "space-y-4"
                             })
                       ],
-                      className: "container mx-auto my-16"
+                      className: "container mx-auto px-4 py-16"
                     })
               ],
               className: "min-h-screen bg-black text-green-400 font-mono"
