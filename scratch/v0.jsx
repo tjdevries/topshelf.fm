@@ -14,7 +14,7 @@ export default function Component() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-green-400 font-mono">
+    <div className="min-h-full bg-black text-green-400 font-mono">
       <header className="p-6 border-b border-green-400">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">

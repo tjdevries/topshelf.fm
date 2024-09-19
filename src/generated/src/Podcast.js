@@ -122,7 +122,7 @@ function Podcast(Props) {
                       className: "container mx-auto my-16"
                     })
               ],
-              className: "min-h-screen bg-black text-green-400 font-mono"
+              className: "min-h-full bg-black text-green-400 font-mono"
             });
 }
 
