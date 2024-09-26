@@ -17,3 +17,24 @@ module Input = struct
     = "Input"
   [@@react.component] [@@mel.module "@/components/ui/input"]
 end
+
+module Spotify = struct
+  external make
+    :  ?onClick:(unit -> unit)
+    -> ?children:React.element
+    -> ?className:string
+    -> url : string
+    -> React.element
+    = "SpotifyLink"
+  [@@react.component] [@@mel.module "@/components/spotify"]
+end
+
+module Sidebar = struct
+  external make
+    :  ?onClick:(unit -> unit)
+    -> ?children:React.element
+    -> ?className:string
+    -> React.element
+    = "PodcastSidebar"
+  [@@react.component] [@@mel.module "@/components/sidebar"]
+end
