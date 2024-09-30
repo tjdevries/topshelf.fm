@@ -1,6 +1,5 @@
-version = 0.26.2
 profile = janestreet
 
-margin = 80
+margin = 100
 doc-comments-padding = 100
 exp-grouping = preserve

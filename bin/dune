@@ -1,4 +1,5 @@
 (executable
-  (name generate_episodes)
-  (libraries xml-light base fmt feed)
-  (preprocess (pps ppx_deriving.std)))
+ (name generate_episodes)
+ (libraries xml-light base fmt feed)
+ (preprocess
+  (pps ppx_deriving.std)))

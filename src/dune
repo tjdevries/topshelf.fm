@@ -7,10 +7,10 @@
  (module_systems es6))
 
 (rule
-  (mode promote)
-  (target episodes.ml)
-  (deps ../bin/generate_episodes.exe ../data/rss.xml)
-  (action
-   (with-stdout-to %{target}
-    (run %{deps}))))
-
+ (mode promote)
+ (target episodes.ml)
+ (deps ../bin/generate_episodes.exe ../data/rss.xml)
+ (action
+  (with-stdout-to
+   %{target}
+   (run %{deps}))))
