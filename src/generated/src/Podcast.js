@@ -32,7 +32,7 @@ function Podcast$EpisodeComp(Props) {
   const dispatch = match[1];
   const description_class = match[0].expanded ? "" : "hidden";
   const body = JsxRuntime.jsx("div", {
-        className: "border border-white p-4 m-4 text-wrap" + description_class,
+        className: "border border-white p-4 m-4 text-wrap " + description_class,
         dangerouslySetInnerHTML: {
           __html: episode.description
         }
