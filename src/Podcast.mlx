@@ -19,7 +19,7 @@ module EpisodeComp = struct
     let state, dispatch = React.useReducer reducer { expanded = false; other = "" } in
     let description_class = if state.expanded then "" else "hidden" in
     let body =
-      <div className=("border border-white p-4 m-4 text-wrap" ^ description_class)
+      <div className=("border border-white p-4 m-4 text-wrap " ^ description_class)
            dangerouslySetInnerHTML=(dangerousHtml episode.description) />
     in
     <div className="border border-primary p-4 rounded-md hover:border-primary-400 \
