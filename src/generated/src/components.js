@@ -5,14 +5,24 @@ const Button = {};
 
 const Input = {};
 
+const Sidebar = {};
+
 const Spotify = {};
 
-const Sidebar = {};
+const Youtube = {};
+
+const Rss = {};
+
+const Icons = {
+  Spotify: Spotify,
+  Youtube: Youtube,
+  Rss: Rss
+};
 
 export {
   Button ,
   Input ,
-  Spotify ,
   Sidebar ,
+  Icons ,
 }
 /* No side effect */

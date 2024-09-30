@@ -10,23 +10,8 @@ module Button = struct
 end
 
 module Input = struct
-  external make
-    :  ?onClick:(unit -> unit)
-    -> ?children:React.element
-    -> React.element
-    = "Input"
+  external make : ?onClick:(unit -> unit) -> ?children:React.element -> React.element = "Input"
   [@@react.component] [@@mel.module "@/components/ui/input"]
-end
-
-module Spotify = struct
-  external make
-    :  ?onClick:(unit -> unit)
-    -> ?children:React.element
-    -> ?className:string
-    -> url : string
-    -> React.element
-    = "SpotifyLink"
-  [@@react.component] [@@mel.module "@/components/spotify"]
 end
 
 module Sidebar = struct
@@ -37,4 +22,39 @@ module Sidebar = struct
     -> React.element
     = "PodcastSidebar"
   [@@react.component] [@@mel.module "@/components/sidebar"]
+end
+
+module Icons = struct
+  module Spotify = struct
+    external make
+      :  ?onClick:(unit -> unit)
+      -> ?children:React.element
+      -> ?className:string
+      -> url:string
+      -> React.element
+      = "SpotifyLink"
+    [@@react.component] [@@mel.module "@/components/spotify"]
+  end
+
+  module Youtube = struct
+    external make
+      :  ?onClick:(unit -> unit)
+      -> ?children:React.element
+      -> ?className:string
+      -> url:string
+      -> React.element
+      = "YoutubeLink"
+    [@@react.component] [@@mel.module "@/components/youtube"]
+  end
+
+  module Rss = struct
+    external make
+      :  ?onClick:(unit -> unit)
+      -> ?children:React.element
+      -> ?className:string
+      -> url:string
+      -> React.element
+      = "RssLink"
+    [@@react.component] [@@mel.module "@/components/rss"]
+  end
 end

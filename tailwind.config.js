@@ -1,8 +1,11 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
     content: [
     "./index.html",
+    "./src/*.mlx",
     "./src/generated/src/**/*.{js,jsx,ts,tsx}",
 	"./vendor/**/*.{js,jsx,ts,tsx}",
   ],
@@ -24,14 +27,8 @@ export default {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
+  			primary: colors.emerald,
+  			secondary: colors.slate,
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'

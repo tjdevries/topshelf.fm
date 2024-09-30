@@ -23,10 +23,7 @@ module Query = struct
     | Some value -> value
     | None ->
       let names = List.map ~f:Xml.tag (Xml.children node) in
-      Fmt.failwith
-        "[get_node] could not find tag: %s | %s"
-        name
-        (String.concat ~sep:", " names)
+      Fmt.failwith "[get_node] could not find tag: %s | %s" name (String.concat ~sep:", " names)
   ;;
 
   let get_attr (node : Xml_light_types.xml) name =
@@ -81,11 +78,7 @@ let to_child (child : Xml_light_types.xml) =
 let handle_channel (channel : Xml_light_types.xml) =
   match channel with
   | Xml.Element ("channel", _, children) ->
-    let items =
-      List.filter children ~f:(tag "item")
-      |> List.map ~f:to_child
-      |> List.to_array
-    in
+    let items = List.filter children ~f:(tag "item") |> List.map ~f:to_child |> List.to_array in
     { title = Query.get_text channel "title"
     ; description = Query.get_text channel "description"
     ; link = Query.get_text channel "link"

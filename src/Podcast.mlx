@@ -3,13 +3,6 @@ open React
 let channel = Episodes.channel
 let dangerousHtml html = [%mel.obj { __html = html }]
 
-(* let seconds_to_hms seconds = *)
-(*   let seconds = seconds / 1000 in *)
-(*   let hours = seconds / 3600 in *)
-(*   let minutes = (seconds mod 3600) / 60 in *)
-(*   let secs = seconds mod 60 in *)
-(*   Printf.sprintf "%02d:%02d:%02d" hours minutes secs *)
-
 module EpisodeComp = struct
   type state =
     { expanded : bool
@@ -23,28 +16,24 @@ module EpisodeComp = struct
   ;;
 
   let[@react.component] make ~(episode : Feed.item) =
-    let state, dispatch =
-      React.useReducer reducer { expanded = false; other = "" }
-    in
+    let state, dispatch = React.useReducer reducer { expanded = false; other = "" } in
     let description_class = if state.expanded then "" else "hidden" in
     let body =
-      <div className=("border border-white p-4 m-4 " ^ description_class)
+      <div className=("border border-white p-4 m-4 text-wrap" ^ description_class)
            dangerouslySetInnerHTML=(dangerousHtml episode.description) />
     in
-    <div className="border border-green-400 p-4 rounded-md hover:bg-green-400 \
-                    hover:text-black transition-colors"
+    <div className="border border-primary p-4 rounded-md hover:border-primary-400 \
+                    hover:bg-primary-400 hover:text-black transition-colors"
          onClick=(fun _ -> dispatch ToggleExpanded)>
       <div className="flex justify-between items-center">
         <h4 className="text-lg font-semibold">(string episode.title)</h4>
-        <span className="text-sm">(string episode.duration)</span>
+        <span className="text-sm hidden lg:block ">(string episode.duration)</span>
       </div>
       body
-      <a href=episode.link
-         onClick=(fun e -> React.Event.Mouse.stopPropagation e)>
+      <a href=episode.link onClick=(fun e -> React.Event.Mouse.stopPropagation e)>
         <Components.Button variant="outline"
-                           className="mt-2 text-xs border-green-400 \
-                                      text-green-400 hover:bg-green-400 \
-                                      hover:text-black">
+                           className="mt-2 text-xs border-primary-400 text-primary-200 \
+                                      hover:bg-primary-400 hover:text-black">
           (string "Goto Episode")
         </Components.Button>
       </a>
@@ -52,44 +41,45 @@ module EpisodeComp = struct
   ;;
 end
 
+let rss_url = "https://anchor.fm/s/fb29b160/podcast/rss"
 let spotify_url = "https://podcasters.spotify.com/pod/show/topshelffm"
+let youtube_url = "https://www.youtube.com/@TopShelfFM"
+
+module Icons = Components.Icons
 
 let[@react.component] make () =
   let episodes =
-    Array.map
-      (fun (episode : Feed.item) -> <EpisodeComp key=episode.id episode />)
-      channel.items
+    Array.map (fun (episode : Feed.item) -> <EpisodeComp key=episode.id episode />) channel.items
   in
-  <div>
-    <div className=[%tw
-                     "something and a long thing here"
-                       "another wow and a thing that's long here"
-                       "more things here. it's also long"] />
-    <div className="min-h-screen bg-black text-green-400 font-mono">
-      <header className="p-6 border-b border-green-400">
+  <div className="mx-auto max-w-4xl">
+    <div className="min-h-screen bg-black text-primary-400 font-mono">
+      <header className="p-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            (* <Terminal className="w-8 h-8" /> *)
-            <div>
-              <h1 className="text-2xl font-bold">(string "Top Shelf")</h1>
-            </div>
+            <h1 className="text-2xl font-bold">(string "Top Shelf")</h1>
           </div>
         </div>
-        <div className="container mx-auto flex justify-between items-center">
-          <br />
-        </div>
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center"><br /></div>
+        <p className="container mx-auto flex justify-between items-center items">
           (string
              {|You know ThePrimeagen can't read, but now you can finally watch him listen. Don't worry, teej_dv is here to help with coherent questions.|})
-        </div>
+        </p>
       </header>
-      <section className="container mx-auto my-16">
-        <div className="m-4"><Components.Spotify url=spotify_url /></div>
-        <h3 className="text-2xl font-bold mb-6">(string "Latest Episodes")</h3>
+      <section className="container mx-auto flex flex-col">
+        <div className="flex w-full justify-between mb-2 items-center content-center">
+          <h3 className="max-content text-2xl text-primary-400 font-bold my-auto">
+            (string "Latest Episodes")
+          </h3>
+          <section className="flex gap-2">
+            <Icons.Spotify url=spotify_url />
+            <Icons.Youtube url=youtube_url />
+            <Icons.Rss url=rss_url />
+          </section>
+        </div>
         <div className="space-y-4">(array episodes)</div>
       </section>
     </div>
-    <Components.Sidebar />
+    (* <Components.Sidebar /> *)
   </div>
 ;;
 
