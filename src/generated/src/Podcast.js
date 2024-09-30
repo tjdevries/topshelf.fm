@@ -32,7 +32,10 @@ function Podcast$EpisodeComp(Props) {
   const dispatch = match[1];
   const description_class = match[0].expanded ? "" : "hidden";
   const body = JsxRuntime.jsx("div", {
-        className: "border border-white p-4 m-4 text-wrap " + description_class,
+        className: "peer border border-white p-4 m-4 text-wrap cursor-text " + description_class,
+        onClick: (function (e) {
+            e.stopPropagation();
+          }),
         dangerouslySetInnerHTML: {
           __html: episode.description
         }
@@ -57,7 +60,7 @@ function Podcast$EpisodeComp(Props) {
                       children: JsxRuntime.jsx(Button.Button, {
                             children: "Goto Episode",
                             variant: "outline",
-                            className: "mt-2 text-xs border-primary-400 text-primary-200 hover:bg-primary-400 hover:text-black"
+                            className: "mt-2 text-xs"
                           }),
                       href: episode.link,
                       onClick: (function (e) {
@@ -65,7 +68,7 @@ function Podcast$EpisodeComp(Props) {
                         })
                     })
               ],
-              className: "border border-primary p-4 rounded-md hover:border-primary-400 hover:bg-primary-400 hover:text-black transition-colors",
+              className: "border border-primary p-4 rounded-md hover:border-primary-400 hover:bg-primary-400 hover:text-black transition-colors cursor-pointer",
               onClick: (function (param) {
                   Curry._1(dispatch, /* ToggleExpanded */0);
                 })

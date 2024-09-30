@@ -19,11 +19,12 @@ module EpisodeComp = struct
     let state, dispatch = React.useReducer reducer { expanded = false; other = "" } in
     let description_class = if state.expanded then "" else "hidden" in
     let body =
-      <div className=("border border-white p-4 m-4 text-wrap " ^ description_class)
+      <div className=("peer border border-white p-4 m-4 text-wrap cursor-text " ^ description_class)
+           onClick=(fun e -> React.Event.Mouse.stopPropagation e)
            dangerouslySetInnerHTML=(dangerousHtml episode.description) />
     in
     <div className="border border-primary p-4 rounded-md hover:border-primary-400 \
-                    hover:bg-primary-400 hover:text-black transition-colors"
+                    hover:bg-primary-400 hover:text-black transition-colors cursor-pointer"
          onClick=(fun _ -> dispatch ToggleExpanded)>
       <div className="flex justify-between items-center">
         <h4 className="text-lg font-semibold">(string episode.title)</h4>
@@ -31,9 +32,7 @@ module EpisodeComp = struct
       </div>
       body
       <a href=episode.link onClick=(fun e -> React.Event.Mouse.stopPropagation e)>
-        <Components.Button variant="outline"
-                           className="mt-2 text-xs border-primary-400 text-primary-200 \
-                                      hover:bg-primary-400 hover:text-black">
+        <Components.Button variant="outline" className="mt-2 text-xs">
           (string "Goto Episode")
         </Components.Button>
       </a>

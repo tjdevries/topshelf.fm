@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
 import { FaYoutube } from "react-icons/fa"
+import { IconLink } from "./icon-link"
 
 /**
  * Props for the SpotifyLink component
@@ -14,19 +14,7 @@ import { FaYoutube } from "react-icons/fa"
  * @returns {JSX.Element}
  */
 export function YoutubeLink({ url, className = "" }) {
-  return (
-    <a href={url}>
-      <Button
-        as="a"
-        variant="outline"
-        size="lg"
-        className={`group relative overflow-hidden border-2 border-primary-400 bg-black text-primary-400 hover:text-black hover:bg-primary-400 ${className}`}
-      >
-        <span className="relative z-10 flex items-center justify-center">
-          <FaYoutube className="mr-4 h-5 w-5" />
-        </span>
-        <span className="absolute inset-0 z-0 bg-primary-400 transition-transform duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-      </Button>
-    </a>
-  )
+	return (
+		<IconLink icon={<FaYoutube />} url={url} className={className} />
+	)
 }
