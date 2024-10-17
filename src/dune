@@ -8,7 +8,7 @@
 
 (rule
  (mode promote)
- (target episodes.ml)
+ (target EpisodeHistory.ml)
  (deps ../bin/generate_episodes.exe ../data/rss.xml)
  (action
   (with-stdout-to

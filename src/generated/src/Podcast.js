@@ -5,7 +5,8 @@ import * as Spotify from "@/components/spotify";
 import * as Button from "@/components/ui/button";
 import * as Youtube from "@/components/youtube";
 import * as Curry from "melange.js/curry.js";
-import * as Melange__Episodes from "./episodes.js";
+import * as Melange__EpisodeHistory from "./EpisodeHistory.js";
+import * as Melange__Upcoming from "./Upcoming.js";
 import * as Stdlib__Array from "melange/array.js";
 import * as React from "react";
 import * as JsxRuntime from "react/jsx-runtime";
@@ -15,6 +16,67 @@ function dangerousHtml(html) {
           __html: html
         };
 }
+
+const format_date = (function(utcTimestamp) {
+    const dateObj = new Date(utcTimestamp);
+    return dateObj.toLocaleString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZoneName: 'short',
+    });
+  }
+);
+
+function Podcast$UpcomingComponent(Props) {
+  let episode = Props.episode;
+  const date = format_date(episode.date);
+  return JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsxs("div", {
+                      children: [
+                        JsxRuntime.jsxs("div", {
+                              children: [
+                                JsxRuntime.jsx("h2", {
+                                      children: episode.guest,
+                                      className: "text-lg font-bold mr-2"
+                                    }),
+                                JsxRuntime.jsx("a", {
+                                      children: episode.x_handle,
+                                      className: "text-sm text-muted-foreground",
+                                      href: episode.x_link
+                                    })
+                              ],
+                              className: "flex items-baseline mb-1"
+                            }),
+                        JsxRuntime.jsx("p", {
+                              children: episode.topic,
+                              className: "text-sm line-clamp-2"
+                            })
+                      ],
+                      className: "flex-grow mr-4"
+                    }),
+                JsxRuntime.jsxs("div", {
+                      children: [
+                        JsxRuntime.jsx("p", {
+                              className: "mr-2 h-4 w-4 flex-shrink-0"
+                            }),
+                        JsxRuntime.jsx("span", {
+                              children: date
+                            })
+                      ],
+                      className: "flex items-center text-sm text-muted-foreground whitespace-nowrap"
+                    })
+              ],
+              className: "rounded-lg p-4 w-full flex items-center justify-between border border-white"
+            });
+}
+
+const UpcomingComponent = {
+  make: Podcast$UpcomingComponent
+};
 
 function reducer(state, param) {
   return {
@@ -48,9 +110,12 @@ function Podcast$EpisodeComp(Props) {
                               children: episode.title,
                               className: "text-lg font-semibold"
                             }),
-                        JsxRuntime.jsx("span", {
-                              children: episode.duration,
-                              className: "text-sm hidden lg:block "
+                        JsxRuntime.jsxs("span", {
+                              children: [
+                                "Duration: ",
+                                episode.duration
+                              ],
+                              className: "text-sm text-muted-foreground hidden lg:block "
                             })
                       ],
                       className: "flex justify-between items-center"
@@ -84,94 +149,174 @@ const rss_url = "https://anchor.fm/s/fb29b160/podcast/rss";
 
 const spotify_url = "https://podcasters.spotify.com/pod/show/topshelffm";
 
-const youtube_url = "https://www.youtube.com/@TopShelfFM";
+const youtube_url = "https://www.youtube.com/playlist?list=PL2Fq-K0QdOQhLEX54hNhsTRvKnCSQrzyn";
+
+const clips_url = "https://www.youtube.com/@TopShelfFM";
+
+function make(name) {
+  return function (children, param) {
+    return JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                        children: children,
+                        className: "gap-4 mr-4"
+                      }),
+                  JsxRuntime.jsx("span", {
+                        children: name,
+                        className: "hidden lg:block"
+                      })
+                ],
+                className: "flex flex-row items-center"
+              });
+  };
+}
+
+function Podcast$ListenComponent(Props) {
+  return make(Props.name)(Props.children, undefined);
+}
+
+const ListenComponent = {
+  make: Podcast$ListenComponent
+};
 
 function Podcast(Props) {
+  const scheduled = Stdlib__Array.map((function (episode) {
+          const Key = episode.guest;
+          return JsxRuntime.jsx(Podcast$UpcomingComponent, {
+                      episode: episode
+                    }, Key);
+        }), Melange__Upcoming.upcoming);
   const episodes = Stdlib__Array.map((function (episode) {
           const Key = episode.id;
           return JsxRuntime.jsx(Podcast$EpisodeComp, {
                       episode: episode
                     }, Key);
-        }), Melange__Episodes.channel.items);
-  return JsxRuntime.jsx("div", {
-              children: JsxRuntime.jsxs("div", {
-                    children: [
-                      JsxRuntime.jsxs("header", {
+        }), Melange__EpisodeHistory.channel.items);
+  const links = [
+    JsxRuntime.jsx(Podcast$ListenComponent, {
+          name: "Spotify",
+          children: JsxRuntime.jsx(Spotify.SpotifyLink, {
+                url: spotify_url
+              })
+        }, "spotify"),
+    JsxRuntime.jsx(Podcast$ListenComponent, {
+          name: "YouTube",
+          children: JsxRuntime.jsx(Youtube.YoutubeLink, {
+                url: youtube_url
+              })
+        }, "youtube"),
+    JsxRuntime.jsx(Podcast$ListenComponent, {
+          name: "Clips",
+          children: JsxRuntime.jsx(Youtube.YoutubeLink, {
+                url: clips_url
+              })
+        }, "clips"),
+    JsxRuntime.jsx(Podcast$ListenComponent, {
+          name: "RSS",
+          children: JsxRuntime.jsx(Rss.RssLink, {
+                url: rss_url
+              })
+        }, "rss")
+  ];
+  return JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("div", {
+                      children: JsxRuntime.jsxs("aside", {
                             children: [
-                              JsxRuntime.jsx("div", {
-                                    children: JsxRuntime.jsx("div", {
-                                          children: JsxRuntime.jsx("h1", {
-                                                children: "Top Shelf",
-                                                className: "text-2xl font-bold"
-                                              }),
-                                          className: "flex items-center space-x-2"
-                                        }),
-                                    className: "container mx-auto flex justify-between items-center"
+                              JsxRuntime.jsx("h3", {
+                                    children: "Available:",
+                                    className: "max-content text-2xl text-primary-400 font-bold my-auto"
                                   }),
-                              JsxRuntime.jsx("div", {
-                                    children: JsxRuntime.jsx("br", {}),
-                                    className: "container mx-auto flex justify-between items-center"
-                                  }),
-                              JsxRuntime.jsx("p", {
-                                    children: "You know ThePrimeagen can't read, but now you can finally watch him listen. Don't worry, teej_dv is here to help with coherent questions.",
-                                    className: "container mx-auto flex justify-between items-center items"
-                                  })
+                              links
                             ],
-                            className: "p-6"
+                            className: "sticky top-0 items-start w-45 b g-muted pt-4 text-primary-400"
                           }),
-                      JsxRuntime.jsxs("section", {
-                            children: [
-                              JsxRuntime.jsxs("div", {
-                                    children: [
-                                      JsxRuntime.jsx("h3", {
+                      className: "hidden lg:flex flex-col"
+                    }),
+                JsxRuntime.jsxs("div", {
+                      children: [
+                        JsxRuntime.jsxs("header", {
+                              children: [
+                                JsxRuntime.jsx("div", {
+                                      children: JsxRuntime.jsxs("div", {
+                                            children: [
+                                              JsxRuntime.jsx("h1", {
+                                                    children: "Top Shelf",
+                                                    className: "text-2xl font-bold w-full"
+                                                  }),
+                                              JsxRuntime.jsx("header", {
+                                                    children: links,
+                                                    className: "lg:hidden flex justify-center items-center "
+                                                  })
+                                            ],
+                                            className: "flex items-center space-x-2 w-full"
+                                          }),
+                                      className: "container mx-auto flex justify-between items-center"
+                                    }),
+                                JsxRuntime.jsx("div", {
+                                      children: JsxRuntime.jsx("br", {}),
+                                      className: "container mx-auto flex justify-between items-center"
+                                    }),
+                                JsxRuntime.jsx("p", {
+                                      children: "You know ThePrimeagen can't read, but now you can finally watch him listen. Don't worry, teej_dv is here to help with coherent questions.",
+                                      className: "container mx-auto flex justify-between items-center items"
+                                    })
+                              ]
+                            }),
+                        JsxRuntime.jsxs("section", {
+                              children: [
+                                JsxRuntime.jsx("h3", {
+                                      children: "Upcoming Episodes",
+                                      className: "text-2xl text-primary-400 font-bold mt-4 mb-4 my-auto"
+                                    }),
+                                JsxRuntime.jsx("div", {
+                                      children: scheduled,
+                                      className: "space-y-4"
+                                    })
+                              ]
+                            }),
+                        JsxRuntime.jsxs("section", {
+                              children: [
+                                JsxRuntime.jsx("div", {
+                                      children: JsxRuntime.jsx("h3", {
                                             children: "Latest Episodes",
                                             className: "max-content text-2xl text-primary-400 font-bold my-auto"
                                           }),
-                                      JsxRuntime.jsxs("section", {
-                                            children: [
-                                              JsxRuntime.jsx(Spotify.SpotifyLink, {
-                                                    url: spotify_url
-                                                  }),
-                                              JsxRuntime.jsx(Youtube.YoutubeLink, {
-                                                    url: youtube_url
-                                                  }),
-                                              JsxRuntime.jsx(Rss.RssLink, {
-                                                    url: rss_url
-                                                  })
-                                            ],
-                                            className: "flex gap-2"
-                                          })
-                                    ],
-                                    className: "flex w-full justify-between mb-2 items-center content-center"
-                                  }),
-                              JsxRuntime.jsx("div", {
-                                    children: episodes,
-                                    className: "space-y-4"
-                                  })
-                            ],
-                            className: "container mx-auto flex flex-col"
-                          })
-                    ],
-                    className: "min-h-screen bg-black text-primary-400 font-mono"
-                  }),
-              className: "mx-auto max-w-4xl"
+                                      className: "flex w-full justify-between mb-2 items-center content-center"
+                                    }),
+                                JsxRuntime.jsx("div", {
+                                      children: episodes,
+                                      className: "space-y-4"
+                                    })
+                              ],
+                              className: "container mt-4 mx-auto flex flex-col"
+                            })
+                      ],
+                      className: "mx-auto max-w-4xl m-4 pt-4 min-h-screen bg-black text-primary-400 font-mono"
+                    })
+              ],
+              className: "flex mt-4"
             });
 }
 
-const channel = Melange__Episodes.channel;
+const channel = Melange__EpisodeHistory.channel;
 
-const make = Podcast;
+const make$1 = Podcast;
 
 const $$default = Podcast;
 
 export {
   channel ,
   dangerousHtml ,
+  format_date ,
+  UpcomingComponent ,
   EpisodeComp ,
   rss_url ,
   spotify_url ,
   youtube_url ,
-  make ,
+  clips_url ,
+  ListenComponent ,
+  make$1 as make,
   $$default as default,
 }
 /* @/components/rss Not a pure module */

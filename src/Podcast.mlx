@@ -1,7 +1,44 @@
 open React
 
-let channel = Episodes.channel
+let channel = EpisodeHistory.channel
 let dangerousHtml html = [%mel.obj { __html = html }]
+
+let format_date : string -> string =
+  [%mel.raw
+    {|
+  function(utcTimestamp) {
+    const dateObj = new Date(utcTimestamp);
+    return dateObj.toLocaleString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZoneName: 'short',
+    });
+  }
+|}]
+;;
+
+module UpcomingComponent = struct
+  let[@react.component] make ~(episode : Upcoming.upcoming) =
+    let date = format_date episode.date in
+    <div className="rounded-lg p-4 w-full flex items-center justify-between border border-white">
+      <div className="flex-grow mr-4">
+        <div className="flex items-baseline mb-1">
+          <h2 className="text-lg font-bold mr-2">(string episode.guest)</h2>
+          <a href=episode.x_link className="text-sm text-muted-foreground">
+            (string episode.x_handle)
+          </a>
+        </div>
+        <p className="text-sm line-clamp-2">(string episode.topic)</p>
+      </div>
+      <div className="flex items-center text-sm text-muted-foreground whitespace-nowrap">
+        <p className="mr-2 h-4 w-4 flex-shrink-0" /> <span>(string date)</span>
+      </div>
+    </div>
+  ;;
+end
 
 module EpisodeComp = struct
   type state =
@@ -28,7 +65,9 @@ module EpisodeComp = struct
          onClick=(fun _ -> dispatch ToggleExpanded)>
       <div className="flex justify-between items-center">
         <h4 className="text-lg font-semibold">(string episode.title)</h4>
-        <span className="text-sm hidden lg:block ">(string episode.duration)</span>
+        <span className="text-sm text-muted-foreground hidden lg:block ">
+          (string "Duration: ") (string episode.duration)
+        </span>
       </div>
       body
       <a href=episode.link onClick=(fun e -> React.Event.Mouse.stopPropagation e)>
@@ -42,20 +81,58 @@ end
 
 let rss_url = "https://anchor.fm/s/fb29b160/podcast/rss"
 let spotify_url = "https://podcasters.spotify.com/pod/show/topshelffm"
-let youtube_url = "https://www.youtube.com/@TopShelfFM"
+let youtube_url = "https://www.youtube.com/playlist?list=PL2Fq-K0QdOQhLEX54hNhsTRvKnCSQrzyn"
+let clips_url = "https://www.youtube.com/@TopShelfFM"
 
 module Icons = Components.Icons
 
+module ListenComponent = struct
+  let[@react.component] make ~name ~children () =
+    <div className="flex flex-row items-center">
+      <span className="gap-4 mr-4">children</span>
+      <span className="hidden lg:block">(string name)</span>
+    </div>
+  ;;
+end
+
 let[@react.component] make () =
+  let scheduled =
+    Array.map
+      (fun (episode : Upcoming.upcoming) -> <UpcomingComponent key=episode.guest episode />)
+      Upcoming.upcoming
+  in
   let episodes =
     Array.map (fun (episode : Feed.item) -> <EpisodeComp key=episode.id episode />) channel.items
   in
-  <div className="mx-auto max-w-4xl">
-    <div className="min-h-screen bg-black text-primary-400 font-mono">
-      <header className="p-6">
+  let links =
+    [| <ListenComponent key="spotify" name="Spotify">
+         <Icons.Spotify url=spotify_url />
+       </ListenComponent>
+     ; <ListenComponent key="youtube" name="YouTube">
+         <Icons.Youtube url=youtube_url />
+       </ListenComponent>
+     ; <ListenComponent key="clips" name="Clips"><Icons.Youtube url=clips_url /></ListenComponent>
+     ; <ListenComponent key="rss" name="RSS"><Icons.Rss url=rss_url /></ListenComponent>
+    |]
+  in
+  <div className="flex mt-4">
+    (* Sidebar for desktop view *)
+    <div className="hidden lg:flex flex-col">
+      <aside className="sticky top-0 items-start w-45 b g-muted pt-4 text-primary-400">
+        <h3 className="max-content text-2xl text-primary-400 font-bold my-auto">
+          (string "Available:")
+        </h3>
+        (array links)
+      </aside>
+    </div>
+    (* Main area *)
+    <div className="mx-auto max-w-4xl m-4 pt-4 min-h-screen bg-black text-primary-400 font-mono">
+      (* Header for mobile view *)
+      <header>
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold">(string "Top Shelf")</h1>
+          <div className="flex items-center space-x-2 w-full">
+            <h1 className="text-2xl font-bold w-full">(string "Top Shelf")</h1>
+            <header className="lg:hidden flex justify-center items-center ">(array links)</header>
           </div>
         </div>
         <div className="container mx-auto flex justify-between items-center"><br /></div>
@@ -64,16 +141,17 @@ let[@react.component] make () =
              {|You know ThePrimeagen can't read, but now you can finally watch him listen. Don't worry, teej_dv is here to help with coherent questions.|})
         </p>
       </header>
-      <section className="container mx-auto flex flex-col">
+      <section>
+        <h3 className="text-2xl text-primary-400 font-bold mt-4 mb-4 my-auto">
+          (string "Upcoming Episodes")
+        </h3>
+        <div className="space-y-4">(array scheduled)</div>
+      </section>
+      <section className="container mt-4 mx-auto flex flex-col">
         <div className="flex w-full justify-between mb-2 items-center content-center">
           <h3 className="max-content text-2xl text-primary-400 font-bold my-auto">
             (string "Latest Episodes")
           </h3>
-          <section className="flex gap-2">
-            <Icons.Spotify url=spotify_url />
-            <Icons.Youtube url=youtube_url />
-            <Icons.Rss url=rss_url />
-          </section>
         </div>
         <div className="space-y-4">(array episodes)</div>
       </section>

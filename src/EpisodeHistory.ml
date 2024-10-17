@@ -6,6 +6,36 @@ let channel : Feed.channel = {
   items = [|
     
     {
+      id = "414d8fca-fd2e-436b-8476-d844d34f4915";
+      title = "Taylor Otwell: Laravel, PHP, OSS & VC";
+      description = {inner|<p>Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel's humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!</p>
+<p><br /></p>
+<p>Sponsor for the Show: Infinite Red</p>
+<p>If your company needs help moving to mobile, Infinite Red could be a great choice for you! From the smallest startups to some of the largest companies, Infinite Red is ready to help you ship an elegant and effective mobile application with React Native. Check them out at: <a href="https://infinite.red/" target="_blank" rel="ugc noopener noreferrer">https://infinite.red/</a></p>
+<p><br /></p>
+<p>Links from the show:</p>
+<p>Taylor's X: <a href="https://x.com/taylorotwell" target="_blank" rel="ugc noopener noreferrer">https://x.com/taylorotwell</a></p>
+<p>Laravel: <a href="https://laravel.com/" target="_blank" rel="ugc noopener noreferrer">https://laravel.com/</a></p>
+|inner};
+      summary = {inner|<p>Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel's humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!</p>
+<p><br /></p>
+<p>Sponsor for the Show: Infinite Red</p>
+<p>If your company needs help moving to mobile, Infinite Red could be a great choice for you! From the smallest startups to some of the largest companies, Infinite Red is ready to help you ship an elegant and effective mobile application with React Native. Check them out at: <a href="https://infinite.red/" target="_blank" rel="ugc noopener noreferrer">https://infinite.red/</a></p>
+<p><br /></p>
+<p>Links from the show:</p>
+<p>Taylor's X: <a href="https://x.com/taylorotwell" target="_blank" rel="ugc noopener noreferrer">https://x.com/taylorotwell</a></p>
+<p>Laravel: <a href="https://laravel.com/" target="_blank" rel="ugc noopener noreferrer">https://laravel.com/</a></p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/Taylor-Otwell-Laravel--PHP--OSS--VC-e2pnvlo|inner};
+      duration = "01:45:28";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/93109368/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-16%2F388186173-44100-2-1bc1fa36a9915.mp3|inner};
+        length = 101253954;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
       id = "91fdbc12-d222-41a7-9708-fa635966b91c";
       title = "DHH: On Competency, Coding and Children";
       description = {inner|<p>DHH is the Creator of Ruby on Rails, Co-owner &amp; CTO of 37signals (Basecamp &amp; HEY), NYT best-selling author, and Le Mans 24h class-winner.</p>

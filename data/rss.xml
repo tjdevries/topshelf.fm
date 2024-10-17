@@ -9,7 +9,7 @@
 			<link>https://topshelf.fm</link>
 		</image>
 		<generator>Anchor Podcasts</generator>
-		<lastBuildDate>Thu, 19 Sep 2024 03:27:00 GMT</lastBuildDate>
+		<lastBuildDate>Thu, 17 Oct 2024 15:00:02 GMT</lastBuildDate>
 		<atom:link href="https://anchor.fm/s/fb29b160/podcast/rss" rel="self" type="application/rss+xml"/>
 		<author><![CDATA[topshelf]]></author>
 		<copyright><![CDATA[topshelf]]></copyright>
@@ -25,6 +25,38 @@
 		<itunes:explicit>No</itunes:explicit>
 		<itunes:category text="Technology"/>
 		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+		<item>
+			<title><![CDATA[Taylor Otwell: Laravel, PHP, OSS & VC]]></title>
+			<description><![CDATA[<p>Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel's humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!</p>
+<p><br /></p>
+<p>Sponsor for the Show: Infinite Red</p>
+<p>If your company needs help moving to mobile, Infinite Red could be a great choice for you! From the smallest startups to some of the largest companies, Infinite Red is ready to help you ship an elegant and effective mobile application with React Native. Check them out at: <a href="https://infinite.red/" target="_blank" rel="ugc noopener noreferrer">https://infinite.red/</a></p>
+<p><br /></p>
+<p>Links from the show:</p>
+<p>Taylor's X: <a href="https://x.com/taylorotwell" target="_blank" rel="ugc noopener noreferrer">https://x.com/taylorotwell</a></p>
+<p>Laravel: <a href="https://laravel.com/" target="_blank" rel="ugc noopener noreferrer">https://laravel.com/</a></p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Taylor-Otwell-Laravel--PHP--OSS--VC-e2pnvlo</link>
+			<guid isPermaLink="false">414d8fca-fd2e-436b-8476-d844d34f4915</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Thu, 17 Oct 2024 14:26:38 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/93109368/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-16%2F388186173-44100-2-1bc1fa36a9915.mp3" length="101253954" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel&apos;s humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Sponsor for the Show: Infinite Red&lt;/p&gt;
+&lt;p&gt;If your company needs help moving to mobile, Infinite Red could be a great choice for you! From the smallest startups to some of the largest companies, Infinite Red is ready to help you ship an elegant and effective mobile application with React Native. Check them out at: &lt;a href=&quot;https://infinite.red/&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://infinite.red/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Links from the show:&lt;/p&gt;
+&lt;p&gt;Taylor&apos;s X: &lt;a href=&quot;https://x.com/taylorotwell&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://x.com/taylorotwell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Laravel: &lt;a href=&quot;https://laravel.com/&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://laravel.com/&lt;/a&gt;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:45:28</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>4</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
 		<item>
 			<title><![CDATA[DHH: On Competency, Coding and Children]]></title>
 			<description><![CDATA[<p>DHH is the Creator of Ruby on Rails, Co-owner &amp; CTO of 37signals (Basecamp &amp; HEY), NYT best-selling author, and Le Mans 24h class-winner.</p>
