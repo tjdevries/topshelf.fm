@@ -108,7 +108,7 @@ function Podcast$EpisodeComp(Props) {
                       children: [
                         JsxRuntime.jsx("h4", {
                               children: episode.title,
-                              className: "text-lg font-semibold"
+                              className: "text-sm lg:text-lg font-semibold"
                             }),
                         JsxRuntime.jsxs("span", {
                               children: [

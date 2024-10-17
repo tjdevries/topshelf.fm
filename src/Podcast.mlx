@@ -65,7 +65,7 @@ module EpisodeComp = struct
                     hover:bg-primary-400 hover:text-black transition-colors cursor-pointer"
          onClick=(fun _ -> dispatch ToggleExpanded)>
       <div className="flex justify-between items-center">
-        <h4 className="text-lg font-semibold">(string episode.title)</h4>
+        <h4 className="text-sm lg:text-lg font-semibold">(string episode.title)</h4>
         <span className="text-sm text-muted-foreground hidden lg:block ">
           (string "Duration: ") (string episode.duration)
         </span>
