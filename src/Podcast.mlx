@@ -23,7 +23,8 @@ let format_date : string -> string =
 module UpcomingComponent = struct
   let[@react.component] make ~(episode : Upcoming.upcoming) =
     let date = format_date episode.date in
-    <div className="rounded-lg p-4 w-full flex items-center justify-between border border-white">
+    <div className="rounded-lg p-4 w-full flex flex-col md:flex-row items-center justify-between \
+                    border border-white">
       <div className="flex-grow mr-4">
         <div className="flex items-baseline mb-1">
           <h2 className="text-lg font-bold mr-2">(string episode.guest)</h2>

@@ -70,7 +70,7 @@ function Podcast$UpcomingComponent(Props) {
                       className: "flex items-center text-sm text-muted-foreground whitespace-nowrap"
                     })
               ],
-              className: "rounded-lg p-4 w-full flex items-center justify-between border border-white"
+              className: "rounded-lg p-4 w-full flex flex-col md:flex-row items-center justify-between border border-white"
             });
 }
 
