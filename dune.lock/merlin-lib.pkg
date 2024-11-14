@@ -1,4 +1,4 @@
-(version 5.1-502)
+(version 5.2.1-502)
 
 (build
  (progn
@@ -12,6 +12,6 @@
 (source
  (fetch
   (url
-   https://github.com/ocaml/merlin/releases/download/v5.1-502/merlin-5.1-502.tbz)
+   https://github.com/ocaml/merlin/releases/download/v5.2.1-502/merlin-5.2.1-502.tbz)
   (checksum
-   sha256=4fd808bc26929cffcca8ea06344790159c10e3eaf9c914cf46ef79e917fcae15)))
+   sha256=5c02dc71b2d31b619851c14a965b91c650a4dbcd49bf56004eee61e0c58d584c)))
