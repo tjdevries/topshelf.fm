@@ -9,7 +9,7 @@
 			<link>https://topshelf.fm</link>
 		</image>
 		<generator>Anchor Podcasts</generator>
-		<lastBuildDate>Thu, 17 Oct 2024 15:00:02 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 11 Feb 2025 04:00:00 GMT</lastBuildDate>
 		<atom:link href="https://anchor.fm/s/fb29b160/podcast/rss" rel="self" type="application/rss+xml"/>
 		<author><![CDATA[topshelf]]></author>
 		<copyright><![CDATA[topshelf]]></copyright>
@@ -25,6 +25,124 @@
 		<itunes:explicit>No</itunes:explicit>
 		<itunes:category text="Technology"/>
 		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+		<item>
+			<title><![CDATA[History of Programming: Babbage to Hopper (ft. Uncle Bob)]]></title>
+			<description><![CDATA[<p>### LINKS Code Rabbit: Review your code, find bugs and ship FASTER!Check it out here: https://www.coderabbit.ai/ - Use promo code TOPSHELF !Sentry: Application performance monitoring for developers &amp; software teams to see errors clearer, solve issues faster &amp; continue learning continuously.Use code topshelf for $100 off (3 months of team plan, or 150k total free errors).Try it out here: https://sentry.io/welcome/?utm_source=topshelf&amp;code=topshelftimestamps:00:00 - Intro01:20 - History Of Programming 04:08 - Charles Babbage15:51 - Ada Lovelace26:45 - John von Neumann36:52 - Alan Turing46:58 - Grace Hopper1:00:21 - Q&amp;A</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/History-of-Programming-Babbage-to-Hopper-ft--Uncle-Bob-e2umvol</link>
+			<guid isPermaLink="false">6f443f35-c77a-4cd7-ac7a-bf07d56d4337</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Tue, 11 Feb 2025 03:27:09 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/98319573/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-11%2F394655090-44100-2-573bdd4f79f9d.mp3" length="83213582" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;### LINKS Code Rabbit: Review your code, find bugs and ship FASTER!Check it out here: https://www.coderabbit.ai/ - Use promo code TOPSHELF !Sentry: Application performance monitoring for developers &amp;amp; software teams to see errors clearer, solve issues faster &amp;amp; continue learning continuously.Use code topshelf for $100 off (3 months of team plan, or 150k total free errors).Try it out here: https://sentry.io/welcome/?utm_source=topshelf&amp;amp;code=topshelftimestamps:00:00 - Intro01:20 - History Of Programming 04:08 - Charles Babbage15:51 - Ada Lovelace26:45 - John von Neumann36:52 - Alan Turing46:58 - Grace Hopper1:00:21 - Q&amp;amp;A&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:26:40</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>9</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Mitchell Hashimoto: Creator of Ghostty talks Zig, OSS and Terminals]]></title>
+			<description><![CDATA[<p>Thanks to the sponsor for today's video - Graphite!Check out stacked PRs, code review tools and more: gt.dev/topshelf
+
+</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Mitchell-Hashimoto-Creator-of-Ghostty-talks-Zig--OSS-and-Terminals-e2tdr0g</link>
+			<guid isPermaLink="false">bd4e2a42-0a40-4cb8-a4bb-0f445ca405ce</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Mon, 13 Jan 2025 04:18:25 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/96971216/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-13%2F392975104-44100-2-7167c86dcb576.mp3" length="77204583" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Thanks to the sponsor for today&apos;s video - Graphite!Check out stacked PRs, code review tools and more: gt.dev/topshelf
+
+&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:20:25</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>8</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Jose Valim: Creator of Elixir]]></title>
+			<description><![CDATA[<p>Today's Sponsors:
+
+Code Rabbit: https://www.coderabbit.ai - Use promo code TOPSHELF !
+Boot dot dev: https://boot.dev/btw
+
+Twitch https://twitch.tv/ThePrimeagen
+Discord https://discord.gg/ThePrimeagen
+
+</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Jose-Valim-Creator-of-Elixir-e2sjoff</link>
+			<guid isPermaLink="false">8ba26d2f-e6d6-45c0-abc0-780da9d75c4a</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Sat, 21 Dec 2024 08:30:30 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/96116655/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-21%2F391916849-44100-2-20cf88cb397e1.mp3" length="115859120" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Today&apos;s Sponsors:
+
+Code Rabbit: https://www.coderabbit.ai - Use promo code TOPSHELF !
+Boot dot dev: https://boot.dev/btw
+
+Twitch https://twitch.tv/ThePrimeagen
+Discord https://discord.gg/ThePrimeagen
+
+&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>02:00:41</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>7</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Ryan Dahl: Creator of Node & Deno talks Deno 2.0]]></title>
+			<description><![CDATA[<p>Today we had Ryan Dahl on the podcast and talk about the history of Node, Deno and so much more. Really hope you enjoy this talk with him! Thanks everyone.</p>
+<p><br /></p>
+<p>Big thanks to the sponsor of today's episode: Code Rabbit <a href="https://coderabbit.ai/" target="_blank" rel="ugc noopener noreferrer">https://coderabbit.ai/</a>. </p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Ryan-Dahl-Creator-of-Node--Deno-talks-Deno-2-0-e2qsrr8</link>
+			<guid isPermaLink="false">bb25c854-2571-4a7b-b033-897b1c625676</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Tue, 12 Nov 2024 17:54:33 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/94317864/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-12%2F389686564-44100-2-27ce29f7f4334.mp3" length="86919208" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Today we had Ryan Dahl on the podcast and talk about the history of Node, Deno and so much more. Really hope you enjoy this talk with him! Thanks everyone.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Big thanks to the sponsor of today&apos;s episode: Code Rabbit &lt;a href=&quot;https://coderabbit.ai/&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://coderabbit.ai/&lt;/a&gt;. &lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:30:32</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>6</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Yacine: How a Rejected Side Project Turned into a Job At X ]]></title>
+			<description><![CDATA[<p>We talk about how to psyop yourself into loving work, working out and respecting your users. I hope you enjoy the episode!</p>
+<p><br /></p>
+<p>The Yapper Himself: <a href="https://x.com/yacineMTB" target="_blank" rel="ugc noopener noreferrer">https://x.com/yacineMTB</a></p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/topshelffm/episodes/Yacine-How-a-Rejected-Side-Project-Turned-into-a-Job-At-X-e2qbbdm</link>
+			<guid isPermaLink="false">960d2405-3772-4a9d-afd4-675c7f1e0ab3</guid>
+			<dc:creator><![CDATA[topshelf]]></dc:creator>
+			<pubDate>Wed, 30 Oct 2024 14:52:20 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/fb29b160/podcast/play/93743990/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-30%2F388972716-44100-2-6c22b80e662fa.mp3" length="77266441" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;We talk about how to psyop yourself into loving work, working out and respecting your users. I hope you enjoy the episode!&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The Yapper Himself: &lt;a href=&quot;https://x.com/yacineMTB&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://x.com/yacineMTB&lt;/a&gt;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:20:29</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42038136/42038136-1726601723823-d03bbde20d083.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>5</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
 		<item>
 			<title><![CDATA[Taylor Otwell: Laravel, PHP, OSS & VC]]></title>
 			<description><![CDATA[<p>Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel's humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!</p>

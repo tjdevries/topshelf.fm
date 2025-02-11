@@ -6,6 +6,110 @@ let channel : Feed.channel = {
   items = [|
     
     {
+      id = "6f443f35-c77a-4cd7-ac7a-bf07d56d4337";
+      title = "History of Programming: Babbage to Hopper (ft. Uncle Bob)";
+      description = {inner|<p>### LINKS Code Rabbit: Review your code, find bugs and ship FASTER!Check it out here: https://www.coderabbit.ai/ - Use promo code TOPSHELF !Sentry: Application performance monitoring for developers &amp; software teams to see errors clearer, solve issues faster &amp; continue learning continuously.Use code topshelf for $100 off (3 months of team plan, or 150k total free errors).Try it out here: https://sentry.io/welcome/?utm_source=topshelf&amp;code=topshelftimestamps:00:00 - Intro01:20 - History Of Programming 04:08 - Charles Babbage15:51 - Ada Lovelace26:45 - John von Neumann36:52 - Alan Turing46:58 - Grace Hopper1:00:21 - Q&amp;A</p>
+|inner};
+      summary = {inner|<p>### LINKS Code Rabbit: Review your code, find bugs and ship FASTER!Check it out here: https://www.coderabbit.ai/ - Use promo code TOPSHELF !Sentry: Application performance monitoring for developers &amp; software teams to see errors clearer, solve issues faster &amp; continue learning continuously.Use code topshelf for $100 off (3 months of team plan, or 150k total free errors).Try it out here: https://sentry.io/welcome/?utm_source=topshelf&amp;code=topshelftimestamps:00:00 - Intro01:20 - History Of Programming 04:08 - Charles Babbage15:51 - Ada Lovelace26:45 - John von Neumann36:52 - Alan Turing46:58 - Grace Hopper1:00:21 - Q&amp;A</p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/History-of-Programming-Babbage-to-Hopper-ft--Uncle-Bob-e2umvol|inner};
+      duration = "01:26:40";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/98319573/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-11%2F394655090-44100-2-573bdd4f79f9d.mp3|inner};
+        length = 83213582;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
+      id = "bd4e2a42-0a40-4cb8-a4bb-0f445ca405ce";
+      title = "Mitchell Hashimoto: Creator of Ghostty talks Zig, OSS and Terminals";
+      description = {inner|<p>Thanks to the sponsor for today's video - Graphite!Check out stacked PRs, code review tools and more: gt.dev/topshelf
+
+</p>
+|inner};
+      summary = {inner|<p>Thanks to the sponsor for today's video - Graphite!Check out stacked PRs, code review tools and more: gt.dev/topshelf
+</p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/Mitchell-Hashimoto-Creator-of-Ghostty-talks-Zig--OSS-and-Terminals-e2tdr0g|inner};
+      duration = "01:20:25";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/96971216/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-13%2F392975104-44100-2-7167c86dcb576.mp3|inner};
+        length = 77204583;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
+      id = "8ba26d2f-e6d6-45c0-abc0-780da9d75c4a";
+      title = "Jose Valim: Creator of Elixir";
+      description = {inner|<p>Today's Sponsors:
+
+Code Rabbit: https://www.coderabbit.ai - Use promo code TOPSHELF !
+Boot dot dev: https://boot.dev/btw
+
+Twitch https://twitch.tv/ThePrimeagen
+Discord https://discord.gg/ThePrimeagen
+
+</p>
+|inner};
+      summary = {inner|<p>Today's Sponsors:
+Code Rabbit: https://www.coderabbit.ai - Use promo code TOPSHELF !
+Boot dot dev: https://boot.dev/btw
+Twitch https://twitch.tv/ThePrimeagen
+Discord https://discord.gg/ThePrimeagen
+</p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/Jose-Valim-Creator-of-Elixir-e2sjoff|inner};
+      duration = "02:00:41";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/96116655/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-21%2F391916849-44100-2-20cf88cb397e1.mp3|inner};
+        length = 115859120;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
+      id = "bb25c854-2571-4a7b-b033-897b1c625676";
+      title = "Ryan Dahl: Creator of Node & Deno talks Deno 2.0";
+      description = {inner|<p>Today we had Ryan Dahl on the podcast and talk about the history of Node, Deno and so much more. Really hope you enjoy this talk with him! Thanks everyone.</p>
+<p><br /></p>
+<p>Big thanks to the sponsor of today's episode: Code Rabbit <a href="https://coderabbit.ai/" target="_blank" rel="ugc noopener noreferrer">https://coderabbit.ai/</a>. </p>
+|inner};
+      summary = {inner|<p>Today we had Ryan Dahl on the podcast and talk about the history of Node, Deno and so much more. Really hope you enjoy this talk with him! Thanks everyone.</p>
+<p><br /></p>
+<p>Big thanks to the sponsor of today's episode: Code Rabbit <a href="https://coderabbit.ai/" target="_blank" rel="ugc noopener noreferrer">https://coderabbit.ai/</a>. </p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/Ryan-Dahl-Creator-of-Node--Deno-talks-Deno-2-0-e2qsrr8|inner};
+      duration = "01:30:32";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/94317864/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-12%2F389686564-44100-2-27ce29f7f4334.mp3|inner};
+        length = 86919208;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
+      id = "960d2405-3772-4a9d-afd4-675c7f1e0ab3";
+      title = "Yacine: How a Rejected Side Project Turned into a Job At X ";
+      description = {inner|<p>We talk about how to psyop yourself into loving work, working out and respecting your users. I hope you enjoy the episode!</p>
+<p><br /></p>
+<p>The Yapper Himself: <a href="https://x.com/yacineMTB" target="_blank" rel="ugc noopener noreferrer">https://x.com/yacineMTB</a></p>
+|inner};
+      summary = {inner|<p>We talk about how to psyop yourself into loving work, working out and respecting your users. I hope you enjoy the episode!</p>
+<p><br /></p>
+<p>The Yapper Himself: <a href="https://x.com/yacineMTB" target="_blank" rel="ugc noopener noreferrer">https://x.com/yacineMTB</a></p>|inner};
+      link = {inner|https://podcasters.spotify.com/pod/show/topshelffm/episodes/Yacine-How-a-Rejected-Side-Project-Turned-into-a-Job-At-X-e2qbbdm|inner};
+      duration = "01:20:29";
+      enclosure = {
+        url = {inner|https://anchor.fm/s/fb29b160/podcast/play/93743990/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-30%2F388972716-44100-2-6c22b80e662fa.mp3|inner};
+        length = 77266441;
+        kind = "audio/mpeg";
+      };
+    }
+;
+
+    {
       id = "414d8fca-fd2e-436b-8476-d844d34f4915";
       title = "Taylor Otwell: Laravel, PHP, OSS & VC";
       description = {inner|<p>Today we talk with Taylor Otwell, the creator of Laravel. We start at Laravel's humble beginnings and move all the way to the exciting new Series A raise with Accel and all that it is enabling Laravel to do today!</p>
